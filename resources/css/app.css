@@ -1,4 +1,14 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@imort './reset.css';
+
+/*@import './reset.css';*/
+/*@import './logo.css';*/
+
+/*.logo-image {*/
+/*    width: 100px;*/
+/*}*/
+
+body {
+    background: red!important;
+}
