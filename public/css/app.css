@@ -48,6 +48,50 @@ table {
     width: 100px;
 }
 
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-tel {
+    color: #a6d723;
+    font-size: 26px;
+}
+
+.hero {
+    height: calc(100vh - 100px);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-image {
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/hero-image.png');
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.hero-text {
+    padding: 13.1rem;
+    font-size: 26px;
+}
+
+.main {
+    height: calc(100vh - 115px);
+}
+
 /*
 ! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com
 *//*
@@ -1042,6 +1086,9 @@ select {
 }
 .p-6 {
   padding: 1.5rem;
+}
+.p-5 {
+  padding: 1.25rem;
 }
 .p-8 {
   padding: 2rem;
