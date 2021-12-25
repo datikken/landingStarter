@@ -18,5 +18,7 @@
             @yield('content')
         </main>
     </div>
+
+    <script src="{{ asset('js/vendor/gsap/gsap.min.js') }}" defer></script>
 </body>
 </html>

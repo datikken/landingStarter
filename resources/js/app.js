@@ -1,7 +1,18 @@
 require('./bootstrap');
 
-import Alpine from 'alpinejs';
+document.addEventListener('DOMContentLoaded', function() {
+    const popupWhatsappClass = ".popup-whatsapp";
 
-window.Alpine = Alpine;
+    const R = (max, min) => {
+        return Math.random()*(max-min)+min
+    }
 
-Alpine.start();
+    gsap.from(popupWhatsappClass, {
+        opacity: 0,
+        x: 300,
+        duration: .6,
+        rotation: '-=360',
+        scale: 10,
+        right: '-200px'
+    });
+});

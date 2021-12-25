@@ -131,6 +131,109 @@ table {
     top: -3px;
 }
 
+.watercool {
+    background: url('/images/products/vodoblock.png') no-repeat center top;
+    min-height: 500px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.watercool .container-fluid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-image {
+    background-image: url('/images/products/evopc.png');
+    width: 100%;
+    height: 100%;
+}
+
+.product-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-case {
+    margin-bottom: 50px;
+}
+
+.evopc-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.evopc-image img {
+    max-height: 1000px;
+}
+
+.cont-map{
+    width: 100%;
+    overflow: hidden;
+    height: 330px;
+    position: relative;
+}
+.cont-map-right {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 330px;
+    opacity: 0.9;
+    background-color: #dddddd;
+    border-right: 2px solid #a6d723;
+}
+
+.cont-map-text {
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-left: 100px;
+    background-color: #dddddd;
+    padding-bottom: 30px;
+    color:#111;
+}
+
+.icoimg {
+    float: left;
+    padding-top: 10px;
+}
+
+
+.finfo {
+    position: relative;
+    margin: 0px 0 0 40px;
+}
+
+.h3-text {
+    margin-bottom: 5px;
+}
+
+.sub-txt a {
+    text-decoration: none;
+    color:#111;
+}
+
+.popup {}
+
+.popup-whatsapp {
+    position: fixed;
+
+    bottom: 100px;
+    right: 138px;
+}
+
+.popup-icon {
+    width: 75px;
+    height: 75px;
+
+    background-image: url('/images/icons/whatsapp.png');
+    background-size: cover;
+    background-position: center;
+}
+
 /*
 ! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com
 *//*
@@ -679,6 +782,14 @@ select {
   outline: 1px auto -webkit-focus-ring-color;
 }
 *, ::before, ::after {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
@@ -929,6 +1040,9 @@ select {
 }
 .shrink-0 {
   flex-shrink: 0;
+}
+.transform {
+  transform: var(--tw-transform);
 }
 .cursor-default {
   cursor: default;
