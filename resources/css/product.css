@@ -1,0 +1,19 @@
+.h2 {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+
+.h2:after, .h2:before {
+    width: 60px;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    content: "";
+    background-color: #a6d723;
+    margin: 0 38px;
+    top: -3px;
+}
