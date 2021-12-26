@@ -11,13 +11,11 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        @include('components.navbar')
 
-        <main class="main">
-            @yield('content')
-        </main>
-    </div>
+    <main class="main">
+        @include('components.navbar')
+        @yield('content')
+    </main>
 
     <script src="{{ asset('js/vendor/gsap/gsap.min.js') }}" defer></script>
 </body>
