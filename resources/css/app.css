@@ -1,4 +1,15 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@imort './reset.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './modifiers.css';
+@import './reset.css';
+@import './logo.css';
+@import './navbar.css';
+@import './hero.css';
+@import './about.css';
+@import './product.css';
+
+@import './contacts.css';
+@import './popups.css';
+@import './modal.css';

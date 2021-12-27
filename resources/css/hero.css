@@ -1,0 +1,21 @@
+.hero {
+    height: calc(100vh - 100px);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-image {
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/hero-image.png');
+
+    width: 100%;
+    height: 100%;
+}
+
+.hero-text {
+    padding: 13.1rem;
+    font-size: 26px;
+}

@@ -14,7 +14,8 @@ class OrderFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->sentence,
+            'amount' => $this->faker->numberBetween($min = 1000, $max = 9000),
         ];
     }
 }

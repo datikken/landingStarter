@@ -1,0 +1,17 @@
+.popup {}
+
+.popup-whatsapp {
+    position: fixed;
+
+    bottom: 100px;
+    right: 138px;
+}
+
+.popup-icon {
+    width: 75px;
+    height: 75px;
+
+    background-image: url('/images/icons/whatsapp.png');
+    background-size: cover;
+    background-position: center;
+}

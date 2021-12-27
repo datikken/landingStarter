@@ -34,6 +34,18 @@ class LoginController extends Controller
         $this->middleware('nova.guest:'.config('nova.guard'))->except('logout');
     }
 
+    protected function sendLoginResponse(Request $request)
+    {
+        $request->session()->regenerate();
+
+        $this->clearLoginAttempts($request);
+
+        $redirectPath = $this->redirectPath();
+        redirect()->setIntendedUrl($redirectPath);
+
+        return redirect()->intended($redirectPath);
+    }
+
     /**
      * Show the application's login form.
      *
