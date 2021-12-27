@@ -7,8 +7,16 @@
 
     <title>{{ config('app.name', 'Case') }}</title>
 
-    <script src="{{ asset('js/app.js') }}" defer></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link
+        id="fa-css"
+        href="http://pn-techno.ru/wp-content/themes/tempelate/css/font-awesome.css?ver=4.9.3"
+        rel="stylesheet"
+        type="text/css"
+        media="all"
+    >
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body>
 

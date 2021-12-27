@@ -7,25 +7,27 @@
         <div class="cont-map-text">
 
             <div>
-                <i class="fa fa-map-marker fa-2x icoimg"></i>
+                <i class="fa fa-map-marker fa-2x icoimg p-0"></i>
                 <div class="finfo">
-                    <h3 class="h3-text">Адрес</h3>
+                    <h3 class="text-xl font-bold">Адрес</h3>
                     <p class="sub-txt">Санкт-Петербург, ул. Ивана Черных, 29А</p>
                 </div>
             </div>
+            <br />
 
             <div>
-                <i class="fa fa-phone fa-2x icoimg"></i>
+                <i class="fa fa-phone fa-2x icoimg p-0"></i>
                 <div class="finfo">
-                    <h3 class="h3-text">Телефон</h3>
+                    <h3 class="text-xl font-bold">Телефон</h3>
                     <p class="sub-txt"> <a href="tel:+7 911 924-03-22">+7 (911) 924-03-22</a></p>
                 </div>
             </div>
+            <br />
 
             <div>
-                <i class="fa fa-envelope-o fa-2x icoimg"></i>
+                <i class="fa fa-envelope-o fa-2x icoimg  p-0"></i>
                 <div class="finfo">
-                    <h3 class="h3-text">Email</h3>
+                    <h3 class="text-xl font-bold">Email</h3>
                     <p class="sub-txt"> shop@pn-techno.ru</p>
                 </div>
             </div>
