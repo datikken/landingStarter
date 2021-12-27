@@ -8,15 +8,14 @@
     <title>{{ config('app.name', 'Case') }}</title>
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link
-        id="fa-css"
-        href="http://pn-techno.ru/wp-content/themes/tempelate/css/font-awesome.css?ver=4.9.3"
-        rel="stylesheet"
-        type="text/css"
-        media="all"
-    >
 
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 </head>
 <body>
 
@@ -26,5 +25,6 @@
     </main>
 
     <script src="{{ asset('js/vendor/gsap/gsap.min.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>

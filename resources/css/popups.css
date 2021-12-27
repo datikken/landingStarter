@@ -5,6 +5,9 @@
 
     bottom: 100px;
     right: 138px;
+
+    display: flex;
+    align-items: baseline;
 }
 
 .popup-icon {
@@ -14,4 +17,6 @@
     background-image: url('/images/icons/whatsapp.png');
     background-size: cover;
     background-position: center;
+
+    cursor: pointer;
 }

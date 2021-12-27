@@ -1,10 +1,5 @@
 <div class="hero">
     <div class="hero-image">
+        @include('components.swipers.swiper')
     </div>
-    <p class="hero-text">
-        Поставка и продажа компонентов<br />
-        для систем водяного охлаждения
-        Компьютеров с водяным охлаждением
-        Корпусов для майнинг ферм
-    </p>
 </div>
