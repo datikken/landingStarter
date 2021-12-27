@@ -6,6 +6,10 @@
     font-size: 25px;
 }
 
+.z-1 {
+    z-index: -1!important;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -81,19 +85,15 @@ table {
     font-size: 26px;
 }
 
-.hero {
-    height: calc(100vh - 100px);
-
+.suka {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    height: calc(100vh - 110px);
 }
 
 .hero-image {
     background-size: cover;
     background-position: center;
-    background-image: url('/images/hero-image.png');
-
     width: 100%;
     height: 100%;
 }
@@ -240,6 +240,9 @@ table {
 
     bottom: 100px;
     right: 138px;
+
+    display: flex;
+    align-items: baseline;
 }
 
 .popup-icon {
@@ -249,6 +252,8 @@ table {
     background-image: url('/images/icons/whatsapp.png');
     background-size: cover;
     background-position: center;
+
+    cursor: pointer;
 }
 
 /**************************\
@@ -420,6 +425,36 @@ table {
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
     will-change: transform;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-image {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('/images/hero-image.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide:first-child .swiper-image {
+    background-size: cover!important;
 }
 
 /*
@@ -1104,6 +1139,9 @@ select {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -1112,9 +1150,6 @@ select {
 }
 .ml-8 {
   margin-left: 2rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 .mt-3 {
   margin-top: 0.75rem;
@@ -1532,13 +1567,13 @@ select {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 .text-gray-800 {
   --tw-text-opacity: 1;

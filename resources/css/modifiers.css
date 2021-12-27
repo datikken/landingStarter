@@ -5,3 +5,7 @@
 .icon-mail:before {
     font-size: 25px;
 }
+
+.z-1 {
+    z-index: -1!important;
+}

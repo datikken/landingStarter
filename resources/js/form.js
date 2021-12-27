@@ -12,12 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitBtnClass = '.btn-submit';
     const formContactClass = '#form-contact';
     const formErrorClass = '.form-error';
+    const swiperClass = '.swiper';
 
     const whatsBtn = document.querySelector(popupWhatsappClass);
     const closeBtn = document.querySelector(closeBtnClass);
     const submitBtn = document.querySelector(submitBtnClass);
     const form = document.querySelector(formContactClass);
     const formError = document.querySelector(formErrorClass);
+    const swiperEl = document.querySelector(swiperClass);
 
     const inputs = form.querySelectorAll('input');
     const textarea = form.querySelector('textarea');
@@ -38,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 response.json()
             })
             .then(() => {
+                swiperEl.classList.toggle('z-1');
                 MicroModal.close('modal-1');
             });
     }
@@ -66,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(function (err) {
                 formError.classList.remove('hidden')
-                console.log(err, 'error')
             })
     });
 
@@ -82,12 +84,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     whatsBtn.addEventListener('click', () => {
+        swiperEl.classList.toggle('z-1');
         MicroModal.show('modal-1');
         // disableScroll.on();
     });
 
     closeBtn.addEventListener('click', () => {
         MicroModal.close('modal-1');
+        swiperEl.classList.toggle('z-1');
         // disableScroll.off();
     });
 });
