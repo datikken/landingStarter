@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const url = 'order-new';
         const token = document.querySelector('[name=csrf-token]').content;
 
-        fetch(url,{
+        await fetch(url,{
             method: 'POST',
             body: JSON.stringify(formData),
             headers: {
@@ -37,7 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
             .then((response) => {
                 response.json()
             })
-            .then((json) => console.log(json));
+            .then(() => {
+                MicroModal.close('modal-1');
+            });
     }
 
     submitBtn.addEventListener('click', () => {
