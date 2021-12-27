@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Notifications\OrderProcessed;
 use Illuminate\Http\Request;
 use App\Models\Order;
+use App\Models\User;
 
 class OrderController extends Controller
 {
@@ -30,6 +32,9 @@ class OrderController extends Controller
         ]);
 
         $order->save();
+
+        $user = User::find(1);
+        $user->notify(new OrderProcessed($order));
 
         return response()->json($tel);
     }

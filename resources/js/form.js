@@ -1,5 +1,5 @@
 import MicroModal from "micromodal";
-import disableScroll from "disable-scroll";
+// import disableScroll from "disable-scroll";
 import Inputmask from 'inputmask';
 import * as yup from 'yup';
 
@@ -83,11 +83,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     whatsBtn.addEventListener('click', () => {
         MicroModal.show('modal-1');
-        disableScroll.on();
+        // disableScroll.on();
     });
 
     closeBtn.addEventListener('click', () => {
         MicroModal.close('modal-1');
-        disableScroll.off();
+        // disableScroll.off();
     });
 });
