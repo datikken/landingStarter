@@ -25,7 +25,7 @@
             <br />
 
             <div>
-                <i class="fa fa-envelope-o fa-2x icoimg  p-0"></i>
+                <i class="fa fa-envelope-o fa-2x icoimg p-0 icon-mail"></i>
                 <div class="finfo">
                     <h3 class="text-xl font-bold">Email</h3>
                     <p class="sub-txt"> shop@pn-techno.ru</p>

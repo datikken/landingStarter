@@ -1,11 +1,8 @@
 require('./bootstrap');
+require('./form');
 
 document.addEventListener('DOMContentLoaded', function() {
     const popupWhatsappClass = ".popup-whatsapp";
-
-    const R = (max, min) => {
-        return Math.random()*(max-min)+min
-    }
 
     gsap.from(popupWhatsappClass, {
         opacity: 0,

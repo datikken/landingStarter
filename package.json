@@ -23,5 +23,11 @@
         "sass": "^1.32.11",
         "sass-loader": "^11.0.1",
         "tailwindcss": "^3.0.7"
+    },
+    "dependencies": {
+        "disable-scroll": "^0.6.0",
+        "inputmask": "^5.0.6",
+        "micromodal": "^0.4.10",
+        "yup": "^0.32.11"
     }
 }
