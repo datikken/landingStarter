@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Exceptions\NovaExceptionHandler;
+use App\Models\Telephone;
 
 class NovaApplicationServiceProvider extends ServiceProvider
 {

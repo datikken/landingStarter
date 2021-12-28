@@ -21,4 +21,16 @@ document.addEventListener('DOMContentLoaded', function() {
             delay: 2000,
         }
     });
+
+
+    const swiper2 = new Swiper('.swiper2', {
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination1',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 2000,
+        }
+    });
 });

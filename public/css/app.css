@@ -180,12 +180,19 @@ table {
 }
 
 .evopc-text {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    margin: 0 auto;
 }
 
 .evopc-image img {
     max-height: 1000px;
+}
+
+.evopc-list {
+    /*position: absolute;*/
 }
 
 .cont-map{
@@ -243,6 +250,8 @@ table {
 
     display: flex;
     align-items: baseline;
+
+    z-index: 99999;
 }
 
 .popup-icon {
@@ -432,6 +441,10 @@ table {
     height: 100%;
 }
 
+.swiper2 {
+    height: 700px;
+}
+
 .swiper-image {
     width: 100%;
     height: 100%;
@@ -453,7 +466,7 @@ table {
     align-items: center;
 }
 
-.swiper-slide:first-child .swiper-image {
+.swiper1 .swiper-slide:first-child .swiper-image {
     background-size: cover!important;
 }
 

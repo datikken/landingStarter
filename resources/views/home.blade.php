@@ -8,4 +8,5 @@
     @include('components.products.mining')
     @include('components.contacts')
     @include('components.popups.popup-whatsapp')
+
 @endsection
