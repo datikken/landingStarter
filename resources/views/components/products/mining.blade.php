@@ -49,8 +49,8 @@
             </ul>
 
             <div class="evopc-image">
-                @include('components.swipers.swiper2')
-{{--                <img src="/images/products/mining.png">--}}
+{{--                @include('components.swipers.swiper2') --}}
+                <img src="/images/products/mining.png">
             </div>
         </div>
 
