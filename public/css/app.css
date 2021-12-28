@@ -195,6 +195,10 @@ table {
     /*position: absolute;*/
 }
 
+.evopc-cont {
+    margin-bottom: 100px;
+}
+
 .cont-map{
     width: 100%;
     overflow: hidden;
