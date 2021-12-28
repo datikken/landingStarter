@@ -1,4 +1,4 @@
-<div class="suka">
+<div class="swp">
     <div class="swiper swiper1">
         <div class="swiper-wrapper">
             @for ($i = 0; $i < 5; $i++)

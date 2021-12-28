@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         scale: 10,
         right: '-200px'
     });
+
     const swiper1 = new Swiper('.swiper1', {
         spaceBetween: 30,
         pagination: {
