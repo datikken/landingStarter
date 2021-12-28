@@ -1,7 +1,7 @@
 <div class="swp">
     <div class="swiper swiper1">
         <div class="swiper-wrapper">
-            @for ($i = 0; $i < 5; $i++)
+            @for ($i = 0; $i < 7; $i++)
                 <div class="swiper-slide">
                     <div class="swiper-image" style="background-image: url('/images/farms/{{ $i }}.png')"></div>
                 </div>
